@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emre — Projeler</title>
+<style>
+  :root { --bg:#fdfaf7; --card:#ffffff; --text:#1f1b1a; --muted:#6b6360; --line:#e8e2dc; --accent:#e11d48; --ok:#15803d; --warn:#b45309; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.55 "Inter",system-ui,sans-serif; padding:48px 20px 80px; }
+  .wrap { max-width:960px; margin:0 auto; }
+  h1 { font-size:clamp(28px,5vw,40px); letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin-top:8px; }
+  h2 { font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:40px 0 14px; }
+  .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card h3 { font-size:17px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .card p { color:var(--muted); font-size:14px; margin-top:6px; }
+  .card a { display:inline-block; margin-top:12px; color:var(--accent); font-weight:600; text-decoration:none; font-size:14px; }
+  .card a:hover { text-decoration:underline; }
+  .chip { font-size:11px; font-weight:700; letter-spacing:.06em; padding:3px 8px; border-radius:999px; border:1px solid var(--line); }
+  .live { color:var(--ok); border-color:#bbe3c7; background:#f2fbf4; }
+  .local { color:#475569; border-color:#dbe3ee; background:#f5f8fc; }
+  .blocked { color:var(--warn); border-color:#f3ddbb; background:#fdf8ef; }
+  footer { margin-top:56px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Emre — proje panosu</h1>
+  <p class="sub">Çalışan demolar, yerel uygulamalar ve notlar. Canlı olanlar tek tıkla açılır.</p>
+
+  <h2>Canlı (Vercel)</h2>
+  <div class="grid">
+    <div class="card"><h3>Kişisel Gateway <span class="chip live">CANLI</span></h3><p>SEO odaklı hizmet sayfası: paketler, sektör sayfaları, SSS, WhatsApp hunisi.</p><a href="https://emre-gateway.vercel.app">emre-gateway.vercel.app →</a></div>
+    <div class="card"><h3>GitKolay <span class="chip live">CANLI</span></h3><p>Geliştirici olmayanlar için GitHub: repo gezinme, dosya düzenleme, commit, issue, dal yönetimi.</p><a href="https://gitkolay.vercel.app">gitkolay.vercel.app →</a></div>
+    <div class="card"><h3>Magi <span class="chip live">CANLI</span></h3><p>Üç aday cevap üretir, yargıç seçer ya da birleştirir. Anahtar yoksa demo modu.</p><a href="https://emre-magi.vercel.app">emre-magi.vercel.app →</a></div>
+    <div class="card"><h3>Anime Gözlük <span class="chip live">CANLI</span></h3><p>Kameradaki yüzü anime karakterine çevirir; gözler, allık, kedi kulakları, kişilik kartı.</p><a href="https://anime-glasses.vercel.app">anime-glasses.vercel.app →</a></div>
+  </div>
+
+  <h2>Yerel uygulamalar (Docker / pnpm)</h2>
+  <div class="grid">
+    <div class="card"><h3>Meydan <span class="chip local">YEREL</span></h3><p>Türkçe Discord benzeri sohbet: sunucular, kanallar, WebRTC sesli arama ve ekran paylaşımı, tepkiler, yanıtlar.</p><a href="https://github.com/FlyingGrasss/discord-clone">github.com/FlyingGrasss/discord-clone →</a></div>
+    <div class="card"><h3>Rehber <span class="chip local">YEREL</span></h3><p>Kopilot benzeri mentor pazarı: mentor profilleri, açık saatler, talep/kabul akışı, ödeme yok.</p><a href="https://github.com/FlyingGrasss/kopilot-mvp">github.com/FlyingGrasss/kopilot-mvp →</a></div>
+    <div class="card"><h3>Kavram CMS <span class="chip local">YEREL</span></h3><p>API-first içerik yönetimi: tipli koleksiyonlar, taslak/yayın, public content API, admin panel.</p><a href="https://github.com/FlyingGrasss/admin-panel">github.com/FlyingGrasss/admin-panel →</a></div>
+    <div class="card"><h3>Kısa <span class="chip local">YEREL</span></h3><p>Bağlantı kısaltıcı: özel slug, yönlendirme, tıklama istatistikleri, hız limiti.</p><a href="https://github.com/FlyingGrasss/link-shortener">github.com/FlyingGrasss/link-shortener →</a></div>
+    <div class="card"><h3>Tek Kopya <span class="chip local">YEREL</span></h3><p>Medya dedupe demosu: aynı görsel tek blob, canlı depolama metrikleri.</p><a href="https://github.com/FlyingGrasss/tek-kopya">github.com/FlyingGrasss/tek-kopya →</a></div>
+    <div class="card"><h3>BAL Topluluk <span class="chip local">YEREL</span></h3><p>Kulüp rehberi, dijital pano, etkinlikler, admin moderasyonu.</p><a href="https://github.com/FlyingGrasss/bal-topluluk">github.com/FlyingGrasss/bal-topluluk →</a></div>
+    <div class="card"><h3>Drawing Worlds <span class="chip local">YEREL</span></h3><p>Her URL bir dünya: aynı tuvalde canlı çizim, iki tarayıcıda doğrulandı.</p><a href="https://github.com/FlyingGrasss/drawing-worlds">github.com/FlyingGrasss/drawing-worlds →</a></div>
+  </div>
+
+  <h2>Masaüstü ve araçlar</h2>
+  <div class="grid">
+    <div class="card"><h3>Fatih Kalem (masaüstü) <span class="chip local">UYGULAMA</span></h3><p>Electron şeffaf katman: her uygulamanın üzerine çizim, lazer, perde, sayfalar, kayıt, .fkproj.</p><a href="https://github.com/FlyingGrasss/fatih-kalem-app">github.com/FlyingGrasss/fatih-kalem-app →</a></div>
+    <div class="card"><h3>Fatih Kalem (web) <span class="chip local">DEMO</span></h3><p>Tarayıcı sürümü: tahta + içerik üzerine çizim, silgi, perde, PNG.</p><a href="https://github.com/FlyingGrasss/fatih-kalem-clone">github.com/FlyingGrasss/fatih-kalem-clone →</a></div>
+    <div class="card"><h3>Podcast Çevirmen <span class="chip local">CLI</span></h3><p>SRT/VTT/JSON altyazıyı Türkçeye çevirir; sözlük, uzun cue bölme, demo modu.</p><a href="https://github.com/FlyingGrasss/podcast-cevirmen">github.com/FlyingGrasss/podcast-cevirmen →</a></div>
+    <div class="card"><h3>Foraging Bot <span class="chip local">KOD</span></h3><p>Growtopia için insan benzeri kırma, makro koruması, teleport pathing; 24 test.</p><a href="https://github.com/FlyingGrasss/foraging-bot">github.com/FlyingGrasss/foraging-bot →</a></div>
+    <div class="card"><h3>Rickroll Loader <span class="chip local">DEMO</span></h3><p>Her sayfa geçişinde rickroll yükleme ekranı; kaset fallback'i.</p><a href="https://github.com/FlyingGrasss/rickroll-loader">github.com/FlyingGrasss/rickroll-loader →</a></div>
+  </div>
+
+  <h2>Notlar</h2>
+  <div class="grid">
+    <div class="card"><h3>Liderahenk <span class="chip local">NOT</span></h3><p>Merkezi yönetim mimarisi: Lider/Ahenk/XMPP/LDAP, görev-politika ayrımı, alınacak dersler.</p><a href="https://github.com/FlyingGrasss/liderahenk-notes">github.com/FlyingGrasss/liderahenk-notes →</a></div>
+    <div class="card"><h3>WhatsApp Optimized <span class="chip local">NOT</span></h3><p>İçerik adresli medya: tek kopya, isteğe bağlı indirme, mahremiyet ve moderasyon tuzakları.</p><a href="https://github.com/FlyingGrasss/whatsapp-optimized-notes">github.com/FlyingGrasss/whatsapp-optimized-notes →</a></div>
+  </div>
+
+  <footer>Emre Bozkurt · bu sayfa statik, harici bağımlılık yok.</footer>
+</div>
+</body>
+</html>
