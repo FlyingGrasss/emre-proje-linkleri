@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yerel test panosu</title>
+<style>
+  :root { --bg:#fdfaf7; --card:#fff; --text:#1f1b1a; --muted:#6b6360; --line:#e8e2dc; --accent:#e11d48; --ok:#15803d; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.55 Inter,system-ui,sans-serif; padding:40px 18px 70px; }
+  .wrap { max-width:1000px; margin:0 auto; }
+  h1 { font-size:clamp(26px,4vw,36px); letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin-top:6px; }
+  h2 { font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:32px 0 12px; }
+  .grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px 17px; }
+  .card h3 { font-size:16px; }
+  .card p { color:var(--muted); font-size:13.5px; margin-top:5px; }
+  .card a { display:inline-block; margin-top:10px; color:var(--accent); font-weight:600; text-decoration:none; font-size:14px; }
+  code { background:#f3efe9; padding:1px 5px; border-radius:5px; font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Yerel test panosu</h1>
+  <p class="sub">start-all.ps1 çalıştıktan sonra bu sayfadaki bağlantılar açılır.</p>
+
+  <h2>Uygulamalar</h2>
+  <div class="grid">
+    <div class="card"><h3>Meydan — sohbet</h3><p><code>elif / demo1234</code> · sesli sohbet + ekran paylaşımı</p><a href="http://localhost:3100/giris">localhost:3100 →</a></div>
+    <div class="card"><h3>Kavram CMS</h3><p>Şifre: <code>test-admin-123</code> · koleksiyon, giriş, yayınla</p><a href="http://localhost:3101/login">localhost:3101 →</a></div>
+    <div class="card"><h3>Rehber — mentor pazarı</h3><p><code>deniz_ak / demo1234</code> (öğrenci) · <code>elif_yılmaz / demo1234</code> (mentor)</p><a href="http://localhost:3102/mentorlar">localhost:3102 →</a></div>
+    <div class="card"><h3>BAL Topluluk</h3><p>Panoya gönderi at; admin token: <code>test-admin-token-1234567890</code></p><a href="http://localhost:3103/pano">localhost:3103 →</a></div>
+    <div class="card"><h3>Tek Kopya</h3><p>Aynı görseli birden çok sohbete at, Depolama panelini izle</p><a href="http://localhost:3104">localhost:3104 →</a></div>
+    <div class="card"><h3>Drawing Worlds</h3><p>Rastgele dünya aç, bağlantıyı ikinci pencerede aç, birlikte çiz</p><a href="http://localhost:3105">localhost:3105 →</a></div>
+    <div class="card"><h3>Kısa — link shortener</h3><p>Admin token: <code>test-admin-token</code></p><a href="http://localhost:4200">localhost:4200 →</a></div>
+    <div class="card"><h3>Magi</h3><p>Demo modu; anahtar yoksa sahte cevaplarla çalışır</p><a href="http://localhost:3107">localhost:3107 →</a></div>
+    <div class="card"><h3>Anime Gözlük</h3><p>Kamerayı başlat (localhost güvenli bağlam sayılır)</p><a href="http://localhost:3108">localhost:3108 →</a></div>
+    <div class="card"><h3>GitKolay</h3><p>Token olmadan public repo gez; yazmak için PAT</p><a href="http://localhost:3109">localhost:3109 →</a></div>
+    <div class="card"><h3>Kişisel Gateway</h3><p>SEO sitesi; canlı sürüm emre-gateway.vercel.app</p><a href="http://localhost:3110">localhost:3110 →</a></div>
+  </div>
+
+  <h2>Masaüstü ve CLI</h2>
+  <div class="grid">
+    <div class="card"><h3>Fatih Kalem</h3><p><code>C:\Desktop\fatih-kalem-app\dist\Fatih-Kalem-1.0.0-portable.exe</code> · Ctrl+Alt+K çizim/geçirgen</p></div>
+    <div class="card"><h3>Foraging bot testleri</h3><p><code>cd C:\Desktop\foraging-bot; python -m unittest discover -s tests -v</code></p></div>
+    <div class="card"><h3>Podcast Çevirmen</h3><p><code>cd C:\Desktop\podcast-cevirmen; pnpm translate --input examples/sample.srt --output out.srt</code></p></div>
+  </div>
+</div>
+</body>
+</html>
